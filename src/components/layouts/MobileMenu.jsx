@@ -2,9 +2,9 @@ import { HStack, IconButton, useColorModeValue } from '@chakra-ui/react';
 import { NavLink } from 'react-router-dom';
 import { AiOutlineHome } from 'react-icons/ai';
 import { MdExplore } from 'react-icons/md';
-import { BsBookmark } from 'react-icons/bs';
 import { CgProfile } from 'react-icons/cg';
 import { useSelector } from 'react-redux';
+import { GrMapLocation } from 'react-icons/gr';
 
 
 export const MobileMenu = () => {
@@ -49,7 +49,7 @@ export const MobileMenu = () => {
         as={NavLink}
         to="/bookmarks"
         aria-label="bookmark"
-        icon={<BsBookmark size="1.2rem" />}
+        icon={<GrMapLocation size="1.2rem" />}
         borderRadius="1rem"
         style={getActiveStyle}
         size="sm"

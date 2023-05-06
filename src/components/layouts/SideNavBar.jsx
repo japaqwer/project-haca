@@ -2,7 +2,6 @@
 import { Text, Flex, VStack, Avatar, Box, Container } from '@chakra-ui/react';
 import { AiFillHome } from 'react-icons/ai';
 import { MdExplore } from 'react-icons/md';
-import { BsFillBookmarkFill } from 'react-icons/bs';
 import { BsFillPersonFill } from 'react-icons/bs';
 import { NavLink } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
@@ -13,6 +12,7 @@ import { STATUSES } from '../../utilities/statusesConstants';
 import { LogoutFeat } from '../LogoutFeat';
 import { CreatePostModal } from '../CreatePostModal';
 import { Link } from 'react-router-dom';
+import { GrMapLocation } from 'react-icons/gr';
 
 const getActiveStyle = ({ isActive }) => ({
   backgroundColor: isActive ? '#319795' : 'none',
@@ -86,11 +86,11 @@ export const SideNavBar = () => {
           fontSize="1.25rem"
           w="100%"
         >
-          <BsFillBookmarkFill fontSize="1.25rem" />
-          <Text marginLeft={2}>Bookmarks</Text>
+          <GrMapLocation fontSize="1.25rem" />
+          <Text marginLeft={2}>Maps</Text>
         </Flex>
         <Flex
-        display="none"
+          display="none"
           as={NavLink}
           to="/profile"
           style={getActiveStyle}
