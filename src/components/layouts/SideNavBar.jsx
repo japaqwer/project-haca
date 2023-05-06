@@ -90,8 +90,9 @@ export const SideNavBar = () => {
           <Text marginLeft={2}>Bookmarks</Text>
         </Flex>
         <Flex
+        display="none"
           as={NavLink}
-          to="/chat"
+          to="/profile"
           style={getActiveStyle}
           px="1.5"
           py="1"

@@ -44,7 +44,8 @@ import { CreatePostModal } from '../components/CreatePostModal';
 import { unFollowUser } from '../features/users/userSlice';
 
 export const MyProfile = () => {
-  const defaultHeaderImg = 'https://www.gooddoctor.ru/uploads/blog/blog_post_161/povtorniipriem.jpg';
+  const defaultHeaderImg =
+    'https://w.forfun.com/fetch/a7/a719a9da1d8cf0556c931f0bd0d51f05.jpeg';
   let { userId } = useParams();
   const dispatch = useDispatch();
   const userProfile = useSelector(state => state.user.userProfile);
