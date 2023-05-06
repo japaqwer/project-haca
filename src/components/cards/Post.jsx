@@ -206,7 +206,8 @@ export const Post = ({ postData, currentUserId, index, pageName }) => {
           )}
 
           <Box as={Link} to={`/post/${uid}/${postId}`} cursor="pointer">
-            {textContent.slice(0, 20) + (textContent.length > 20 ? '...' : '')}
+            {/* {textContent.slice(0, 20) + (textContent.length > 20 ? '...' : '')} */}
+            {textContent}
           </Box>
           <Flex
             justifyContent="space-between"
